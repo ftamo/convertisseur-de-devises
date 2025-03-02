@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur de devises</title>
+    <link rel="stylesheet" href="converti.css"> <!-- Lien vers le fichier CSS pour le style -->
+</head>
+<body>
+    <div class="container">
+        <h1>💱 Convertisseur de devises</h1> <!-- Titre de la page -->
+
+        <!-- Champ de saisie pour le montant à convertir -->
+        <label for="amount">Montant :</label>
+        <input type="number" id="amount" value="1" min="0">
+
+        <!-- Sélection des devises à convertir -->
+        <div class="currency-selection">
+            <select id="fromCurrency">
+                <option value="EUR">🇪🇺 Euro (EUR)</option>
+                <option value="USD">🇺🇸 Dollar (USD)</option>
+                <option value="XOF">🇸🇳 Franc CFA (XOF)</option>
+                <option value="CNY">🇨🇳 Yuan Chinois (CNY)</option>
+            </select>
+            <span class="arrow">⇄</span> <!-- Symbole de conversion -->
+            <select id="toCurrency">
+                <option value="EUR">🇪🇺 Euro (EUR)</option>
+                <option value="USD">🇺🇸 Dollar (USD)</option>
+                <option value="XOF">🇸🇳 Franc CFA (XOF)</option>
+                <option value="CNY">🇨🇳 Yuan Chinois (CNY)</option>
+            </select>
+        </div>
+
+        <!-- Bouton pour lancer la conversion -->
+        <button onclick="convertCurrency()">Convertir</button>
+
+        <!-- Affichage du résultat de la conversion -->
+        <p id="result">0.00</p>
+    </div>
+
+    <script src="converti.js"></script> <!-- Lien vers le fichier JavaScript pour la logique de conversion -->
+</body>
+</html>

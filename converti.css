@@ -1,0 +1,63 @@
+/* Styles appliqués au body de la page */
+body {
+    font-family: Arial, sans-serif; /* Définit la police de caractères */
+    display: flex; /* Utilise le modèle de mise en page flexible (Flexbox) */
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
+    height: 100vh; /* Définit la hauteur du corps de la page à 100% de la hauteur de la fenêtre */
+    background: linear-gradient(135deg, #4facfe, #00f2fe); /* Dégradé de fond */
+    color: white; /* Définit la couleur du texte par défaut */
+    margin: 0; /* Supprime les marges par défaut du body */
+}
+
+/* Style de la boîte contenant le formulaire */
+.container {
+    background: white; /* Fond blanc pour la boîte */
+    padding: 20px; /* Espacement interne de la boîte */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Ombre portée douce */
+    text-align: center; /* Centre le texte dans la boîte */
+    color: black; /* Définit la couleur du texte à noir */
+}
+
+/* Style des éléments input, select, et button */
+input, select, button {
+    margin: 10px 0; /* Ajoute un espacement de 10px au-dessus et en dessous de chaque élément */
+    padding: 10px; /* Ajoute un padding interne de 10px */
+    width: 100%; /* Définit la largeur de chaque élément à 100% de son conteneur parent */
+    font-size: 16px; /* Définit la taille de la police à 16px */
+    border-radius: 5px; /* Coins arrondis pour les éléments */
+}
+
+/* Style spécifique au bouton */
+button {
+    background-color: #007bff; /* Définit la couleur de fond du bouton */
+    color: white; /* Définit la couleur du texte du bouton */
+    border: none; /* Supprime la bordure par défaut */
+    cursor: pointer; /* Change le curseur en main lors du survol */
+    transition: background 0.3s; /* Ajoute une transition douce pour le changement de couleur de fond */
+}
+
+/* Style du bouton au survol */
+button:hover {
+    background-color: #0056b3; /* Change la couleur de fond du bouton lors du survol */
+}
+
+/* Style pour la section de sélection des devises */
+.currency-selection {
+    display: flex; /* Utilise Flexbox pour l'agencement des éléments */
+    justify-content: space-around; /* Espace les éléments de manière égale */
+    align-items: center; /* Centre les éléments verticalement */
+}
+
+/* Style pour la flèche entre les devises */
+.arrow {
+    font-size: 24px; /* Taille de la flèche */
+    color: #007bff; /* Couleur bleue de la flèche */
+}
+
+/* Style du résultat de la conversion */
+#result {
+    font-size: 1.5em; /* Augmente la taille du texte */
+    font-weight: bold; /* Met le texte en gras */
+    margin-top: 10px; /* Ajoute un espacement au-dessus du résu
